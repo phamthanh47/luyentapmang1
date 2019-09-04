@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[2,4,5,67,54,34,23,45,78,59,80,9];
+    let vt=0;
+   let  max= array[0];
+    for(let i=1;i<array.length;i++){
+        if(max<array[i]){
+            max=array[i];
+            vt=i;
+        }
+    }
+    document.write(" max la: "+max +"  vi tri la : "+vt);
+</script>
+</body>
+</html>

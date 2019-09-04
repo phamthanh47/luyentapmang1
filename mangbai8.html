@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[2,4,-6,-8,-9,5,14,24,0,46,-86,89];
+    let temp;
+    let i;
+    let j;
+    for( i =0; i< arr.length-1;i++){
+        for(j=i+1;j<arr.length;j++)
+        if(arr[i]<arr[j]){
+            temp= arr[i];
+            arr[i]=arr[j];
+            arr[j]= temp ;
+        }
+    }
+    for( i =0; i< arr.length;i++) {
+        document.write(arr[i]+" ");
+    }
+</script>
+</body>
+</html>

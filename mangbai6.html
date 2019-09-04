@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let v = prompt("enter v a number: ");
+   // let v= prompt("enter v number: ");
+    let v=parseInt(6);
+    let dem=0;
+    let arr = new Array();
+    let i;
+   // let result = [];
+    for (i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("enter a number: "));
+        document.write(arr[i]+" ");
+    }
+  /*   for (i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {
+            alert("v is in array");
+            break;
+        } else {
+            document.write("v is not in array");
+        }
+    }  luu y: kieu arr[i] voi v, cung kieu hi moi so sanh duoc
+    */
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {
+        dem++;
+        }
+    }
+    if(dem !== 0){
+        document.write(" v is in array ");
+    }
+    else
+        document.write("v is not in array");
+</script>
+</body>
+</html>

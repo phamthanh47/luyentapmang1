@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let v = parseInt(prompt("enter v  number: "));
+    document.write(v+" ");
+    let i;
+    let arr = new Array();
+    for (i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("enter a number: "));
+        document.write(arr[i]+" ");
+    }
+    let check;
+    for (i = 0; i < 10; i++) {
+        if (arr[i] === v) {
+            check = true;
+            break;
+        }
+        else check=false;
+    }
+    if(check==true){
+        document.write("v is in the array"+" ");
+    }
+    else document.write("v is not in array"+" ");
+    let result=[];
+    let vt;
+   if(check==true){
+       arr[i]=v;
+       result= arr.splice(arr[i],1);
+       arr.push("0");
+   }
+   document.write(" "+ arr);
+
+
+</script>
+</body>
+</html>
